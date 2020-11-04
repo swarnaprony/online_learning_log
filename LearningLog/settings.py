@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'gq-iiykm3pcj=yase9!&!9wr^f233^d@7yvf-^a^93u@n=f1sv'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -34,6 +34,9 @@ INSTALLED_APPS = [
     #My apps
     'learning_logs',
     'users',
+
+    # Third party apps.
+    'bootstrap4',
 
     #Default django apps.
     'django.contrib.admin',
@@ -123,3 +126,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# My settings
+LOGIN_URL = 'users:login'
