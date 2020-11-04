@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'gq-iiykm3pcj=yase9!&!9wr^f233^d@7yvf-^a^93u@n=f1sv'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -33,6 +33,7 @@ ALLOWED_HOSTS = ['*']
 INSTALLED_APPS = [
     #My apps
     'learning_logs',
+    'users',
 
     #Default django apps.
     'django.contrib.admin',
