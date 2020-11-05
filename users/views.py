@@ -7,6 +7,7 @@ from django.contrib.auth.forms import UserCreationForm
 
 def register(request):
     """Register a new user."""
+    print("entered in registration view")
     if request.method != 'POST':
         # Display blank registration form.
         form = UserCreationForm()
